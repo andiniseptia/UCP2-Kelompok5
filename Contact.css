@@ -1,0 +1,250 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e4e0a0 !important;
+    color: #000000;
+}
+
+/* Navbar styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(133, 110, 56, 0.8);
+    padding: 15px 30px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    border-radius: 20px; /* Adjust the radius as needed */
+    box-shadow: 0 4px 8px rgba(18, 17, 17, 0.833); /* Adjust the shadow as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+/* Section styles */
+.section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.section h1,
+.section h2 {
+    color: black;
+}
+
+.section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #c7c16d;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.section form label {
+    margin-bottom: 0.5rem;
+}
+
+.section form input,
+.section form textarea {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    box-sizing: border-box;
+    background-color: #c7c16d; /* Silver background */
+    color: #333; /* Text color */
+}
+
+.section form button {
+    margin-bottom: 3rem;
+    padding: 1rem 2rem;
+    background-color: #c7c16d;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* About section styles */
+.about-info {
+    max-width: 50%;
+}
+
+.about-info h2 {
+    margin-top: 0;
+}
+
+.contact-details p {
+    margin: 1rem 0;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 5%;
+    text-align: left;
+}
+
+.about-info {
+    max-width: 50%;
+    padding-right: 2rem;
+}
+
+.map-container {
+    max-width: 40%;
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.map {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #d4a373;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(133, 110, 56, 0.8); /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center align the text */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Space between the two columns */
+    align-items: flex-start; /* Align items to the top */
+    max-width: 1200px; /* Maximum width of the footer content */
+    margin: 0 auto; /* Center align the footer content */
+    padding: 0 20px; /* Padding for left and right */
+}
+
+.footer-content .logo img {
+    width: 160px; /* Set a width for the logo */
+    height: 200; /* Maintain aspect ratio */
+    align-items: center;
+}
+
+.footer-content ul {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    text-align: left; /* Align text to the left */
+}
+
+.footer-content ul li {
+    margin: 10px 0; /* Margin for each list item */
+}
+
+.footer-content ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Transition effect for hover */
+}
+
+.footer-content ul li a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    text-align: left; /* Align text to the left */
+}
+
+.contact-info a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    margin: 5px 0; /* Margin for each contact info item */
+    transition: color 0.3s ease; /* Transition effect for hover */
+}
+
+.contact-info a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.footer-content .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content .social-icons a {
+    margin-left: 10px;
+    color: #fff !important; /* Warna ikon dengan !important untuk menjamin prioritas tertinggi */
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content .social-icons a:hover {
+    color: #d4a373;
+}
+
+
+.btn-outline-light {
+    border: 1px solid #fff; /* Border color */
+    padding: 10px; /* Padding for the button */
+    border-radius: 50%; /* Rounded buttons */
+    display: inline-flex; /* Inline-flex for icon centering */
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center justify items */
+}
+
+.btn-outline-light i {
+    color: #fff; /* White icon color */
+    transition: color 0.3s ease; /* Transition effect for hover */
+}
+
+.btn-outline-light:hover i {
+    color: #007bff; /* Change color on hover */
+}
